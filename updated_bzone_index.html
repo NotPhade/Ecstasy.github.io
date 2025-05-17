@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ecstasy</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="wrapper">
-    <!-- Meniu lateral -->
-    <div class="sidebar">
-      <div class="sidebar-header">
-        <h2>Ecstasy</h2>
-      </div>
-      <ul class="sidebar-menu">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Regulament</a></li>
-        <li><a href="#">Aplicații Poliție</a></li>
-        <li><a href="#">Aplicații SMURD</a></li>
-        <li><a href="#">Updates</a></li>
-      </ul>
-    </div>
+  <div class="sidebar">
+    <h2>Ecstasy</h2>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#regulament">Regulament</a></li>
+      <li><a href="#politie">Aplicație Poliție</a></li>
+      <li><a href="#smurd">Aplicație SMURD</a></li>
+    </ul>
+  </div>
 
-    <!-- Continut principal -->
-    <div class="main-content">
-      <header>
-        <h1>Dashboard</h1>
-      </header>
+  <div class="main">
+    <header>
+      <h1>Dashboard</h1>
+    </header>
 
-      <section class="app-section">
-        <h2>Aplicații</h2>
-        <p>Accesează aplicațiile oficiale pentru SMURD și Poliție:</p>
-        <div class="app-links">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNQ8dHTPYdZV7VnSKNV4nReQBGQ-qREgO7F3ef6qIcfdmHfg/viewform" class="app-link" target="_blank">Aplicația SMURD</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNQ8dHTPYdZV7VnSKNV4nReQBGQ-qREgO7F3ef6qIcfdmHfg/viewform" class="app-link" target="_blank">Aplicația Poliție</a>
-        </div>
-      </section>
+    <section id="politie">
+      <h2>Aplicație Poliție</h2>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNQ8dHTPYdZV7VnSKNV4nReQBGQ-qREgO7F3ef6qIcfdmHfg/viewform" target="_blank" class="btn">Aplică aici</a>
+    </section>
 
-      <section class="regulament">
-        <h2>Regulament</h2>
-        <p>Consultați regulamentul complet al aplicației aici.</p>
-      </section>
-    </div>
+    <section id="smurd">
+      <h2>Aplicație SMURD</h2>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNQ8dHTPYdZV7VnSKNV4nReQBGQ-qREgO7F3ef6qIcfdmHfg/viewform" target="_blank" class="btn">Aplică aici</a>
+    </section>
+
+    <section id="regulament">
+      <h2>Regulament</h2>
+      <p>Aici poți adăuga regulamentul complet al comunității tale. Fii clar, concis și respectuos față de membrii noi.</p>
+    </section>
   </div>
 </body>
 </html>
