@@ -1,131 +1,99 @@
-/* Resetare CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fundalul întregii pagini */
 body {
-  background-color: #34495e; /* Fundalul întregii pagini */
-  font-family: Arial, sans-serif;
   display: flex;
-  height: 100vh;
-  flex-direction: row;
+  font-family: Arial, sans-serif;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  min-height: 100vh;
 }
 
-/* Meniu lateral fix */
+/* Sidebar fix */
 .sidebar {
   width: 250px;
-  background-color: #2c3e50; /* Meniul lateral cu fundal închis */
-  color: #fff;
+  background-color: #1a252f;
+  height: 100vh;
   padding: 20px;
-  height: 100vh; /* Lățime completă pe verticală */
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 10;
-}
-
-.sidebar-header {
-  text-align: center;
-  margin-bottom: 30px;
 }
 
 .sidebar h2 {
-  font-size: 28px;
-  color: #ecf0f1;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #00bcd4;
 }
 
-.sidebar-menu {
-  list-style-type: none;
+.sidebar ul {
+  list-style: none;
 }
 
-.sidebar-menu li {
+.sidebar ul li {
   margin: 20px 0;
 }
 
-.sidebar-menu li a {
+.sidebar ul li a {
   color: #ecf0f1;
   text-decoration: none;
   font-size: 18px;
   display: block;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
 }
 
-.sidebar-menu li a:hover {
+.sidebar ul li a:hover {
   background-color: #34495e;
 }
 
-/* Continut principal care se aliniază corect */
-.main-content {
-  margin-left: 250px; /* Margină pentru a evita suprapunerea cu meniul */
-  width: calc(100% - 250px); /* Lățime corectă pentru a nu se suprapune cu meniul */
-  padding: 20px;
-  background-color: #fff; /* Fundalul principal */
-  min-height: 100vh; /* Înălțimea completă pe ecran */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Headerul principal */
-header {
-  background-color: #34495e;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 32px;
-}
-
-/* Secțiunea aplicații */
-.app-section {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-}
-
-.app-section h2 {
-  text-align: center;
-  color: #007bff;
-}
-
-.app-link {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 12px 20px;
-  text-align: center;
-  margin: 10px 0;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  font-size: 18px;
-}
-
-.app-link:hover {
-  background-color: #0056b3;
-}
-
-/* Secțiunea regulament */
-.regulament {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.regulament h2 {
+/* Main Content */
+.main {
+  margin-left: 250px;
+  padding: 30px;
+  width: calc(100% - 250px);
+  background-color: #ecf0f1;
+  min-height: 100vh;
   color: #2c3e50;
 }
 
-.regulament p {
-  font-size: 16px;
-  color: #7f8c8d;
+header {
+  background-color: #34495e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
 }
